@@ -10,5 +10,5 @@ class Quote(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField()
     rating = models.IntegerField(default=0)
-    status = models.CharField(max_length=50, choices=STATUS_CHOICE, default=STATUS_CHOICE[0])
+    status = models.CharField(max_length=50, choices=STATUS_CHOICE, default=STATUS_CHOICE[0][1])
     created_at = models.DateTimeField(auto_now_add=True)
