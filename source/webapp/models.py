@@ -7,7 +7,7 @@ STATUS_CHOICE = [('new', 'новая'), ('moderated', 'модерированн�
 
 class Quote(models.Model):
     text = models.TextField(max_length=200)
-    author = models.CharField(max_length=100)
+    name = models.CharField(max_length=100)
     email = models.EmailField()
     rating = models.IntegerField(default=0)
     status = models.CharField(max_length=50, choices=STATUS_CHOICE, default=STATUS_CHOICE[0])

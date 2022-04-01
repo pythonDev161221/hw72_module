@@ -132,3 +132,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+try:
+    from quotation.local_settings import *
+except ModuleNotFoundError:
+    print("Локальный файл настроек проекта не найден")
