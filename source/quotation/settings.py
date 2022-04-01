@@ -40,6 +40,9 @@ INSTALLED_APPS = [
 
     'webapp',
     'accounts',
+    'api_v1',
+
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -113,6 +116,11 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
+LOGOUT_REDIRECT_URL = "webapp:quote_list_view"
+LOGIN_REDIRECT_URL = "webapp:quote_list_view"
+
+LOGIN_URL = 'accounts:login'
 
 
 # Static files (CSS, JavaScript, Images)
