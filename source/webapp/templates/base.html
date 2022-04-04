@@ -1,5 +1,5 @@
 {% load static %}
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -47,10 +47,16 @@
 {% block content %}
 {% endblock content %}
 
-<form action="" id="quote_form" style="display: none">
+<form action="" id="quote_form" style="display: none"
+      data-to-csrf="{% url 'api_v1:get_csrf_token_view' %}"
+        data-to-authorite="{% url 'api_v1:api_token_auth' %}"
+>
 
+    <p>text: <input id="text" type="text"></p>
+    <p>name: <input id="name" type="text"></p>
+    <p>email: <input id="email" type="email"></p>
 
-    <button type="submit">addQuoteBtn</button>
+    <button type="submit" onclick="createQuote(event)">addQuoteBtn</button>
 </form>
 
 <script src="{% static 'index.js' %}"></script>

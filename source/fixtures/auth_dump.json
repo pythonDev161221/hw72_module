@@ -1,0 +1,39 @@
+sef
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$0yyD5SOQhwPQTCnNJaWw1W$rsN2wdQiLqK6G8vzyYtNjSk9n7mMt2WHR4HOBBWctN8=",
+    "last_login": "2022-04-04T09:19:42.920Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@admin.admin",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-04-01T06:31:56.041Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$q5BG4GUIF38KNYNGC91CUG$TvJEXgsTLerDFWeE0ZU8HefRdMvKAc41qkmQyqbUmCE=",
+    "last_login": "2022-04-04T08:30:45.902Z",
+    "is_superuser": false,
+    "username": "aaa",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-04-01T11:09:50Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

@@ -1,0 +1,111 @@
+sef
+[
+{
+  "model": "webapp.quote",
+  "pk": 1,
+  "fields": {
+    "text": "zfbgsdrg",
+    "name": "person1",
+    "email": "asef@sef.com",
+    "rating": 0,
+    "status": "new",
+    "created_at": "2022-04-01T11:24:43.699Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 2,
+  "fields": {
+    "text": "aaa",
+    "name": "person2",
+    "email": "assefef@sef.com",
+    "rating": 5,
+    "status": "new",
+    "created_at": "2022-04-01T11:25:04.047Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 3,
+  "fields": {
+    "text": "zfbsdfgsdrgg",
+    "name": "person3",
+    "email": "asedff@sef.com",
+    "rating": 0,
+    "status": "('new', 'новая')",
+    "created_at": "2022-04-01T11:26:25.191Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 4,
+  "fields": {
+    "text": "zfbsdfgsgfdrg",
+    "name": "person4",
+    "email": "asfdgedff@sef.com",
+    "rating": 0,
+    "status": "новая",
+    "created_at": "2022-04-01T11:27:42.654Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 5,
+  "fields": {
+    "text": "sef",
+    "name": "sliefj",
+    "email": "sef@gmail.com",
+    "rating": 0,
+    "status": "new",
+    "created_at": "2022-04-04T10:02:45.271Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 6,
+  "fields": {
+    "text": "test34",
+    "name": "author",
+    "email": "sehf@iefj.com",
+    "rating": 0,
+    "status": "new",
+    "created_at": "2022-04-04T12:18:25.922Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 7,
+  "fields": {
+    "text": "test34",
+    "name": "author",
+    "email": "sehf@iefj.com",
+    "rating": 0,
+    "status": "new",
+    "created_at": "2022-04-04T12:18:30.651Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 8,
+  "fields": {
+    "text": "test34",
+    "name": "author",
+    "email": "sehf@iefj.com",
+    "rating": 0,
+    "status": "new",
+    "created_at": "2022-04-04T12:18:31.697Z"
+  }
+},
+{
+  "model": "webapp.quote",
+  "pk": 9,
+  "fields": {
+    "text": "test34",
+    "name": "author",
+    "email": "sehf@iefj.com",
+    "rating": 0,
+    "status": "new",
+    "created_at": "2022-04-04T12:18:45.772Z"
+  }
+}
+]
