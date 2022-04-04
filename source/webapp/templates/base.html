@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,12 +21,22 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           {% if not user.is_authenticated %}
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'accounts:login' %}">Login</a>
+{#        <button onclick="login(event)"#}
+{#             data-login-url="{% url 'api_v1:api_token_auth' %}"#}
+{#             data-csrf-url="{% url 'api_v1:get_csrf_token_view' %}"#}
+{#        >ApiLogin</button>#}
+          <a class="nav-link"
+             href="{% url 'accounts:login' %}"
+    >Login</a>
         </li>
           {% else %}
         <li class="nav-item">
           <a class="nav-link" href="{% url 'accounts:logout' %}">Logout</a>
         </li>
+              <button
+              onclick="addQuote(event)"
+{#              data-addquote-url="{% url 'api_v1:quote' %}"#}
+              >addQuote</button>
     {% endif %}
 
       </ul>
@@ -35,6 +46,14 @@
 </nav>
 {% block content %}
 {% endblock content %}
+
+<form action="" id="quote_form" style="display: none">
+
+
+    <button type="submit">addQuoteBtn</button>
+</form>
+
+<script src="{% static 'index.js' %}"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>

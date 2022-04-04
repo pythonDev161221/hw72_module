@@ -7,4 +7,4 @@ class QuoteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Quote
         fields = ("id", "text", "name", "email", "rating", "status", "created_at")
-        read_only_fields = ("id", "rating", "rating", "status", "created_at")
+        read_only_fields = ("id", "rating", "status", "created_at")
